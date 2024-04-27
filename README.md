@@ -1,6 +1,5 @@
 # Projet IA
 
-[![dernière version](https://git.unistra.fr/erken/projet-ia/-/badges/release.svg)](https://git.unistra.fr/erken/projet-ia/-/releases/permalink/latest)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 
 Vous trouverez ici le [projet](https://git.unistra.fr/erken/projet-ia) pour l'UE [Intelligence Artificielle](https://mathinfo.unistra.fr/formations/licence/informatique/parcours-informatique-PR9-18123/cours-intelligence-artificielle-EN26110-18123-PR9) de la licence informatique de l'Université de Strasbourg. Cette UE fait partie du semestre L3IS6P de l'année académique 2023-24.
@@ -75,7 +74,7 @@ Ensuite, installez les dépendances Python (il se peut que `pip` ne soit pas cor
 pip install -r requirements.txt  # Installez les packages Python
 ```
 
-##### Dépendances et hooks Git
+#### Dépendances et hooks Git
 
 Configurez les hooks Git (une fois Python est réglé) :
 
@@ -87,7 +86,7 @@ pre-commit install  # Installez les hooks git
 pre-commit run -a  # Lancez les hooks git pour la toute première fois
 ```
 
-## Astuces sur les hooks Git
+### Astuces sur les hooks Git
 
 Si à cause des git hooks, votre commit a été refusé après que vous avez renseigné votre message de commit, pas de panique c'est pas perdu, vous pouvez le récupérer et l'éditer pour le corriger en exécutant la commande suivante :
 
