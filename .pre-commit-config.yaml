@@ -1,0 +1,62 @@
+default_stages: [pre-commit, pre-push]
+default_install_hook_types: [pre-commit, pre-push]
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-yaml
+      - id: check-toml
+      - id: check-xml
+      - id: check-json
+      - id: pretty-format-json
+        args:
+          - "--autofix"
+          - "--indent=2"
+          - "--no-sort-keys"
+          - "--no-ensure-ascii"
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: fix-byte-order-marker
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-case-conflict
+      - id: detect-private-key
+      - id: mixed-line-ending
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+        language_version: python3.10
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        name: isort (python)
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+  - repo: local
+    hooks:
+      - id: mypy
+        name: mypy
+        entry: mypy
+        language: python
+        # language_version: python3.7
+        types: [python]
+        require_serial: true
+        verbose: true
+        additional_dependencies: [mypy==1.10.0]
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.8.5
+    hooks:
+      - id: nbqa-black
+        additional_dependencies: [black==24.4.2]
+      - id: nbqa-isort
+        additional_dependencies: [isort==5.13.2]
+      - id: nbqa-flake8
+        additional_dependencies: [flake8==7.0.0]
+      - id: nbqa-mypy
+        additional_dependencies: [mypy==1.10.0]
