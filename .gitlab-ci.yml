@@ -20,7 +20,6 @@ default:
     - chown -fR "$(cat RUNNER_USER)" .cache/pre-commit/ .venv/ .cache/pip/
 stages:
   - test
-  - deploy
 variables:
   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
   PRE_COMMIT_HOME: "$CI_PROJECT_DIR/.cache/pre-commit"
