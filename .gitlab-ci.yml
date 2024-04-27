@@ -7,17 +7,17 @@ default:
       - .cache/pre-commit
   before_script:
     # Fix Unistra GitLab Docker runner permission issues
-    - export RUNNER_USER=$(ls -ld .git/ | awk '{print $3}')
+    - echo $(ls -ld .git/ | awk '{print $3}') > RUNNER_USER
     - mkdir -p .cache/pre-commit/ .venv/ .cache/pip/
     - chown -R $(whoami) .
-    ## Install packages
+    # Install packages
     - python --version ; pip --version # For debugging
     - python -m venv .venv/
     - source .venv/bin/activate
     - pip install -r requirements.txt
   after_script:
     # Fix Unistra GitLab Docker runner permission issues
-    - chown -fR "$RUNNER_USER" .cache/pre-commit/ .venv/ .cache/pip/
+    - chown -fR "$(cat RUNNER_USER)" .cache/pre-commit/ .venv/ .cache/pip/
 stages:
   - test
   - deploy
