@@ -8,7 +8,7 @@ default:
   before_script:
     # Fix Unistra GitLab Docker runner permission issues
     - export RUNNER_USER=$(ls -ld .git/ | awk '{print $3}')
-    - mkdir -p .cache/pre-commit/ .venv/ .cache/pre-commit
+    - mkdir -p .cache/pre-commit/ .venv/ .cache/pip/
     - chown -R $(whoami) .
     ## Install packages
     - python --version ; pip --version # For debugging
@@ -17,7 +17,7 @@ default:
     - pip install -r requirements.txt
   after_script:
     # Fix Unistra GitLab Docker runner permission issues
-    - chown -fR "$RUNNER_USER" .cache/pre-commit/ .venv/ .cache/pre-commit
+    - chown -fR "$RUNNER_USER" .cache/pre-commit/ .venv/ .cache/pip/
 stages:
   - test
   - deploy
