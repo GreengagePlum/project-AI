@@ -38,6 +38,14 @@ repos:
     rev: 7.0.0
     hooks:
       - id: flake8
+  - repo: local
+    hooks:
+      - id: mypy
+        name: mypy
+        entry: mypy
+        language: python
+        types: [python]
+        require_serial: true
   - repo: https://github.com/nbQA-dev/nbQA
     rev: 1.8.5
     hooks:
@@ -48,3 +56,7 @@ repos:
       - id: nbqa-flake8
         args: ["--ignore=E402"]
         additional_dependencies: [flake8==7.0.0]
+      - id: nbqa
+        entry: nbqa mypy
+        name: nbqa-mypy
+        args: ["--nbqa-shell"]
