@@ -86,6 +86,12 @@ pre-commit install  # Installez les hooks git
 pre-commit run -a  # Lancez les hooks git pour la toute première fois
 ```
 
+Configurez ensuite [`nbdime`](https://nbdime.readthedocs.io/en/latest/index.html) (un outil pour diff et merge des cahiers Jupyter intelligemment) :
+
+```sh
+nbdime config-git --enable
+```
+
 ### Astuces sur les hooks Git
 
 Si à cause des git hooks, votre commit a été refusé après que vous avez renseigné votre message de commit, pas de panique c'est pas perdu, vous pouvez le récupérer et l'éditer pour le corriger en exécutant la commande suivante :

@@ -186,3 +186,7 @@
 .gitattributes export-ignore
 .gitignore     export-ignore
 .gitkeep       export-ignore
+
+*.ipynb	diff=jupyternotebook
+
+*.ipynb	merge=jupyternotebook
