@@ -11,5 +11,6 @@ seaborn==0.13.2
 pre-commit==3.6.1
 ipython==8.24.0
 ipykernel==6.29.4
+nbdime==4.0.1
 mypy==1.10.0
 pandas-stubs==2.2.1.240316
