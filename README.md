@@ -17,7 +17,7 @@ Il existe un rapport de projet [`compte-rendu.pdf`](https://git.unistra.fr/erken
 | NOM | Prénom | Groupes |
 |:-|:-|:-|
 | ERKEN | Efe | TD1-TP1 |
-| MOULLA | Yanis | TD2-TP6 |
+| MOULLA | Yanis | TD3-TP6 |
 
 Année : L3IS6 Printemps 2024
 
