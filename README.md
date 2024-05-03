@@ -4,7 +4,7 @@
 
 Vous trouverez ici le [projet](https://git.unistra.fr/erken/projet-ia) pour l'UE [Intelligence Artificielle](https://mathinfo.unistra.fr/formations/licence/informatique/parcours-informatique-PR9-18123/cours-intelligence-artificielle-EN26110-18123-PR9) de la licence informatique de l'Université de Strasbourg. Cette UE fait partie du semestre L3IS6P de l'année académique 2023-24.
 
-Voir le [sujet](projet.pdf) du projet pour plus de détails sur ce sur quoi se porte ce projet.
+Voir le [sujet](src/projet.pdf) du projet pour plus de détails sur ce sur quoi se porte ce projet.
 
 **Table des matières :**
 
@@ -26,7 +26,7 @@ Année : L3IS6 Printemps 2024
 
 ## Environnement de développement
 
-*Pour une utilisation en tant que développeur, un environnement dev*.
+_Pour une utilisation en tant que développeur, un environnement dev_.
 
 ### Dépendances
 
