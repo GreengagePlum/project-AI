@@ -6,6 +6,8 @@ Vous trouverez ici le [projet](https://git.unistra.fr/erken/projet-ia) pour l'UE
 
 Voir le [sujet](src/projet.pdf) du projet pour plus de détails sur ce sur quoi se porte ce projet.
 
+Il existe un rapport de projet [`compte-rendu.pdf`](https://git.unistra.fr/erken/projet-ia/-/blob/Rendu_Final/src/compte-rendu.pdf) dans l'itération de [rendu officiel](https://git.unistra.fr/erken/projet-ia/-/tree/Rendu_Final) pour un suivi des étapes du projet et des réponses à ses questions. Jetez un œil à cette version pour voir ce projet dans son état au moment du rendu officiel le 3 mai 2024.
+
 **Table des matières :**
 
 [[_TOC_]]
