@@ -15,7 +15,7 @@ Voir le [sujet](src/projet.pdf) du projet pour plus de détails sur ce sur quoi 
 | NOM | Prénom | Groupes |
 |:-|:-|:-|
 | ERKEN | Efe | TD1-TP1 |
-| MOULLA | Yanis | ... |
+| MOULLA | Yanis | TD2-TP6 |
 
 Année : L3IS6 Printemps 2024
 
